@@ -41,9 +41,9 @@ body {
      Uniform Image size
      -------------------------------------------------------------------- */
   .card-img-top {
-    width: 100%;               /* fill the card width */
-    height: 250px;             /* fixed height for all images */
-    object-fit: cover;         /* crop/scale to cover the box */
+    width: 100%;               
+    height: 250px;             
+    object-fit: cover;        
   }
   
   .row .card {
