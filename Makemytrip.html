@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./makemytrip.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+        <img src="https://cdn.brandfetch.io/makemytrip.com/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" width="30" height="30" class="me-2 align-text-top" alt="MakeMyTrip Logo">
+        <span class="text-primary">Make</span>
+        <span class="text-danger">My</span>
+        <span class="text-primary">Trip</span>
+        
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <!-- Flights -->
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="flightsDropdown" role="button" data-bs-toggle="dropdown">Flights</a>
+            <ul class="dropdown-menu" aria-labelledby="flightsDropdown">
+              <li><a class="dropdown-item" href="#">One-way</a></li>
+              <li><a class="dropdown-item" href="#">Round-trip</a></li>
+              <li><a class="dropdown-item" href="#">Multi-city</a></li>
+            </ul>
+          </li>
+          <!-- Hotels -->
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="hotelsDropdown" role="button" data-bs-toggle="dropdown">Hotels</a>
+            <ul class="dropdown-menu" aria-labelledby="hotelsDropdown">
+              <li><a class="dropdown-item" href="#">By City</a></li>
+              <li><a class="dropdown-item" href="#">By Star Rating</a></li>
+              <li><a class="dropdown-item" href="#">By Price</a></li>
+            </ul>
+          </li>
+          <!-- Holiday Packages -->
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="packagesDropdown" role="button" data-bs-toggle="dropdown">Holiday Packages</a>
+            <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
+              <li><a class="dropdown-item" href="#">International</a></li>
+              <li><a class="dropdown-item" href="#">Domestic</a></li>
+              <li><a class="dropdown-item" href="#">Adventure</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="btn btn-primary px-4" href="#deals">Deals</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero & Search -->
+  <header class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 class="display-5 fw-bold">Discover Your Next Adventure</h1>
+      <p class="lead mb-4">Book flights, hotels & holiday packages at unbeatable prices</p>
+      <form class="row g-2 justify-content-center search-form">
+        <div class="col-md-3"><input type="text" class="form-control" placeholder="From: City or Airport"></div>
+        <div class="col-md-3"><input type="text" class="form-control" placeholder="To: City or Airport"></div>
+        <div class="col-md-2"><input type="date" class="form-control"></div>
+        <div class="col-md-2"><input type="date" class="form-control"></div>
+        <div class="col-md-2"><button type="submit" class="btn btn-primary w-100">Search</button></div>
+      </form>
+    </div>
+  </header>
+
+  <!-- Popular Destinations -->
+  <section id="destinations" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Popular Destinations</h2>
+      <div class="row g-4">
+        <!-- Paris -->
+        <div class="col-md-4">
+          <div class="card destination-card">
+            <img src="https://st.depositphotos.com/1773542/2339/i/450/depositphotos_23397558-stock-photo-aerial-view-of-paris-seine.jpg" class="card-img-top" alt="Paris">
+            <div class="card-body text-center">
+              <h5 class="card-title">Paris</h5>
+              <p class="card-text">Starting at $499</p>
+              <a href="#paris" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- Bali -->
+        <div class="col-md-4">
+          <div class="card destination-card">
+            <img src="https://windows10spotlight.com/wp-content/uploads/2019/10/513b4dd453a38065f0fea218f8104921.jpg" class="card-img-top" alt="Bali">
+            <div class="card-body text-center">
+              <h5 class="card-title">Bali</h5>
+              <p class="card-text">Starting at $399</p>
+              <a href="#bali" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- NYC -->
+        <div class="col-md-4">
+          <div class="card destination-card">
+            <img src="https://www.hdwallpapers.in/download/building_city_new_york_skyscraper_sunset_usa_4k_5k_hd_travel-2560x1440.jpg" class="card-img-top" alt="NYC">
+            <div class="card-body text-center">
+              <h5 class="card-title">New York City</h5>
+              <p class="card-text">Starting at $299</p>
+              <a href="#nyc" class="btn btn-outline-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details Sections -->
+
+  <!-- Paris -->
+  <section id="paris" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Explore Paris</h2>
+      <p class="text-center mb-5">Top attractions & travel tips.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/sunrise-at-eiffel-tower--yannick-lefevre--photography.jpg" class="card-img-top" alt="Eiffel Tower">
+            <div class="card-body">
+              <h5 class="card-title">Eiffel Tower</h5>
+              <p class="card-text">Panoramic views & skip-the-line tickets.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://wallpapershome.com/images/pages/pic_h/4712.jpg" class="card-img-top" alt="Louvre">
+            <div class="card-body">
+              <h5 class="card-title">Louvre Museum</h5>
+              <p class="card-text">Mona Lisa & world-class art collections.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://www.edwud.com/wp-content/uploads/2017/06/notre-dame-cathedral-at-dusk-2000x1200.jpg" class="card-img-top" alt="Notre-Dame">
+            <div class="card-body">
+              <h5 class="card-title">Notre-Dame</h5>
+              <p class="card-text">Gothic architecture & stained glass.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://wallpapercave.com/wp/wp9461632.jpg" class="card-img-top" alt="Champs-Élysées">
+            <div class="card-body">
+              <h5 class="card-title">Champs-Élysées</h5>
+              <p class="card-text">Shopping & cafes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://thumbs.dreamstime.com/b/france-paris-beautiful-architecture-sculpture-montmartre-street-horizontal-pan-france-paris-beautiful-architecture-montmartre-85013482.jpg" class="card-img-top" alt="Montmartre">
+            <div class="card-body">
+              <h5 class="card-title">Montmartre</h5>
+              <p class="card-text">Artistic vibes & Sacré-Cœur.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center mt-4">
+          <a href="#destinations" class="btn btn-secondary">Back</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bali -->
+  <section id="bali" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Explore Bali</h2>
+      <p class="text-center mb-5">Beaches, temples & culture.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://finnsbeachclub.com/wp-content/uploads/2023/11/kuta-beach-in-bali-scaled.jpg" class="card-img-top" alt="Kuta Beach">
+            <div class="card-body">
+              <h5 class="card-title">Kuta Beach</h5>
+              <p class="card-text">Surf & sunsets.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.squarespace-cdn.com/content/v1/51a39504e4b093105c265c24/1494949380445-Q48YETIUZNG1TFFR9KKX/glenn-guy-wounded-monkey.jpg" class="card-img-top" alt="Monkey Forest">
+            <div class="card-body">
+              <h5 class="card-title">Ubud Monkey Forest</h5>
+              <p class="card-text">Monkeys & temples.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://agathatour.com/wp-content/uploads/2023/04/pura-tanah-lot-scaled.jpg" class="card-img-top" alt="Tanah Lot">
+            <div class="card-body">
+              <h5 class="card-title">Tanah Lot</h5>
+              <p class="card-text">Sea temple at sunset.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center mt-4">
+          <a href="#destinations" class="btn btn-secondary">Back</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New York City -->
+  <section id="nyc" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Explore New York City</h2>
+      <p class="text-center mb-5">Iconic sights, skyscrapers & culture.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://c.stocksy.com/a/aUr000/z9/205628.jpg" class="card-img-top" alt="Statue of Liberty">
+            <div class="card-body">
+              <h5 class="card-title">Statue of Liberty</h5>
+              <p class="card-text">Symbol of freedom with guided tours to Liberty Island.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://thumbs.dreamstime.com/b/new-york-ny-usa-mar-horizontal-view-times-square-major-commercial-intersection-tourist-destination-entertainment-center-244203540.jpg" class="card-img-top" alt="Times Square">
+            <div class="card-body">
+              <h5 class="card-title">Times Square</h5>
+              <p class="card-text">Neon lights, Broadway shows, and endless energy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://static.vecteezy.com/system/resources/previews/005/087/791/large_2x/central-park-aerial-view-in-manhattan-new-york-huge-beautiful-park-is-surrounded-by-skyscraper-photo.jpeg" class="card-img-top" alt="Central Park">
+            <div class="card-body">
+              <h5 class="card-title">Central Park</h5>
+              <p class="card-text">Nature in the city with boating, biking & events.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://images.fineartamerica.com/images-medium-large/usa-new-york-city-empire-state-building-with-manhattan-skyline-in-background-tetra-images.jpg" class="card-img-top" alt="Empire State Building">
+            <div class="card-body">
+              <h5 class="card-title">Empire State Building</h5>
+              <p class="card-text">Historic skyscraper offering stunning views of NYC.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100">
+            <img src="https://www.hdwallpapers.in/download/brooklyn_bridge_4k_5k_hd-HD.jpg" class="card-img-top" alt="Brooklyn Bridge">
+            <div class="card-body">
+              <h5 class="card-title">Brooklyn Bridge</h5>
+              <p class="card-text">A walk with skyline views connecting Manhattan & Brooklyn.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center mt-4">
+          <a href="#destinations" class="btn btn-secondary">Back</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 text-center">
+    <div class="container">
+      <p class="mb-2">© 2025 MakeMyTrip Clone | Designed with <i class="fas fa-heart text-danger"></i></p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#" class="text-white">About Us</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Contact</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+      </ul>
+      <div class="mt-2">
+        <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
