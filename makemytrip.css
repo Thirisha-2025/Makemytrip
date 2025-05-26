@@ -1,19 +1,14 @@
-/* style.css */
-
-/* Base Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding-top: 70px;           /* offset for fixed navbar */
+    padding-top: 70px;          
     background-color: #f8f9fa;
   }
-  
-  /* Navbar */
+
   .navbar-brand {
     font-size: 1.5rem;
   }
   
-  /* Hero Section */
   .hero-section {
     background: url('https://media.giphy.com/media/nWWayVr77ePQY/giphy.gif') center/cover no-repeat;
     height: 600px;
@@ -43,7 +38,7 @@ body {
   }
   
   /* --------------------------------------------------------------------
-     Uniform Card Image Sizing
+     Uniform Image size
      -------------------------------------------------------------------- */
   .card-img-top {
     width: 100%;               /* fill the card width */
@@ -51,14 +46,11 @@ body {
     object-fit: cover;         /* crop/scale to cover the box */
   }
   
-  /* Ensure cards stretch to align heights in a row */
   .row .card {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
-  
-  /* Push card-body to fill available space (so buttons stay at bottom) */
   .row .card .card-body {
     flex: 1 1 auto;
     display: flex;
@@ -66,7 +58,7 @@ body {
     justify-content: space-between;
   }
   
-  /* Footer Links */
+  /* Footer */
   footer a {
     color: #adb5bd;
     text-decoration: none;
